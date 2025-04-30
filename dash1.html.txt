@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>מערכת 1 - נתוני כניסות לאתר</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #80deea);
+      color: #333;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #006064;
+    }
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
+    }
+    tableau-viz {
+      display: block;
+      margin: 2rem auto;
+      width: 100%;
+      max-width: 1000px;
+      height: 800px;
+    }
+  </style>
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</head>
+<body>
+  <h1>📈 מערכת 1 - נתוני כניסות לאתר</h1>
+  <p>דאשבורד המציג את נתוני הכניסות לאתר, כולל מקורות תנועה, זמני שהייה ודפים נצפים.</p>
+  <tableau-viz
+    id="tableauViz"
+    src="https://public.tableau.com/views/-_17443805658590/W2D1"
+    toolbar="bottom"
+    hide-tabs
+    width="100%"
+    height="800">
+  </tableau-viz>
+</body>
+</html>
